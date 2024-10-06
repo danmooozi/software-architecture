@@ -1,0 +1,19 @@
+name: '[CI] PR Assignee 자동 지정'
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+    assign-pr:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v3
+    
+        - name: Assign PR creator as assignee
+          uses: actions-ecosystem/action-add-assignees@v1
+          with:
+            assignees: ${{ github.actor }}
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            
