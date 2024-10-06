@@ -1,19 +1,26 @@
 name: '[CI] PR Assignee 자동 지정'
 
+permissions:
+  issues: write
+  pull-requests: write
+
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, reopened]
 
 jobs:
-    assign-pr:
-        runs-on: ubuntu-latest
-        steps:
-        - name: Checkout repository
-          uses: actions/checkout@v3
-    
-        - name: Assign PR creator as assignee
-          uses: actions-ecosystem/action-add-assignees@v1
-          with:
-            assignees: ${{ github.actor }}
-            github_token: ${{ secrets.TOKEN }}
-            
+  assign-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Assign PR to the author
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const prAuthor = context.payload.pull_request.user.login;
+          github.rest.issues.addAssignees({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.payload.pull_request.number,
+            assignees: [prAuthor]
+          })
