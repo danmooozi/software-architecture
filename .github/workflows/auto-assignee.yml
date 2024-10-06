@@ -1,8 +1,12 @@
 name: '[CI] PR Assignee 자동 지정'
 
+permissions:
+  issues: write
+  pull-requests: write
+
 on:
   pull_request:
-    types: [opened, reopened]
+    types: [opened, reopened, synchronize]
 
 jobs:
   assign-pr:
