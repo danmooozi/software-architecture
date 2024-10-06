@@ -2,7 +2,7 @@ name: '[CI] PR Assignee 자동 지정'
 
 on:
   pull_request:
-    types: [opened, synchronized]
+    types: [opened, synchronize]
 
 jobs:
     assign-pr:
