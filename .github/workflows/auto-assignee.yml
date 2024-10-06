@@ -15,5 +15,5 @@ jobs:
           uses: actions-ecosystem/action-add-assignees@v1
           with:
             assignees: ${{ github.actor }}
-            github_token: ${{ secrets.GIT_TOKEN }}
+            github_token: ${{ secrets.TOKEN }}
             
