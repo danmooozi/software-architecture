@@ -29,3 +29,7 @@
 | --- | --- | --- | --- |
 | 01 | [서론](https://github.com/danmooozi/software-architecture/blob/main/ch01_%EC%84%9C%EB%A1%A0/ch01_wynter.md) | 24.09.30 | 김수빈 |
 | 02 | [아키텍처 사고(NY)](https://github.com/danmooozi/software-architecture/blob/main/ch02_%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98_%EC%82%AC%EA%B3%A0(NY)/ch02_eden.md) | 24.09.30 | 김영호 |
+| 03 | [모듈성](https://github.com/danmooozi/software-architecture/blob/main/ch03_모듈성/ch03_lia.md) | 24.10.08 | 오시연 |
+| 04 | [아키텍처 특성 정의](https://github.com/danmooozi/software-architecture/blob/main/ch04_아키텍처_특성_정의/ch04_mono.md) | 24.10.08 | 김원호 |
+| 05 | [아키텍처 특성 식별](https://github.com/danmooozi/software-architecture/blob/main/ch05_아키텍처_특성_식별/ch05_max.md) | 24.10.14 | 이찬형 |
+| 06 | [아키텍처 특성의 측정 및 거버넌스](https://github.com/danmooozi/software-architecture/blob/main/ch06_아키텍처_특성의_측정_및_거버넌스/ch06_wynter.md) | 24.10.14 | 김수빈 |
