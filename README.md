@@ -33,3 +33,7 @@
 | 04 | [아키텍처 특성 정의](https://github.com/danmooozi/software-architecture/blob/main/ch04_아키텍처_특성_정의/ch04_mono.md) | 24.10.08 | 김원호 |
 | 05 | [아키텍처 특성 식별](https://github.com/danmooozi/software-architecture/blob/main/ch05_아키텍처_특성_식별/ch05_max.md) | 24.10.14 | 이찬형 |
 | 06 | [아키텍처 특성의 측정 및 거버넌스](https://github.com/danmooozi/software-architecture/blob/main/ch06_아키텍처_특성의_측정_및_거버넌스/ch06_wynter.md) | 24.10.14 | 김수빈 |
+| 07 | [아키텍처 특성 범위](https://github.com/danmooozi/software-architecture/blob/main/ch07_아키텍처_특성_범위/ch07_eden.md) | 24.10.21 | 김영호 |
+| 08 | [아키텍처 특성의 측정 및 거버넌스](https://github.com/danmooozi/software-architecture/blob/main/ch08_아키텍처_특성의_측정_및_거버넌스/ch08_lia.md) | 24.10.21 | 오시연 |
+| 09 | [아키텍처 스타일 기초](https://github.com/danmooozi/software-architecture/blob/main/ch09_아키텍처_스타일_기초/ch09_mono.md) | 24.10.28 | 김원호 |
+| 10 | [레이어드 아키텍처 스타일](https://github.com/danmooozi/software-architecture/blob/main/ch10_레이어드_아키텍처_스타일/ch10_wynter.md) | 24.10.28 | 김수빈 |
