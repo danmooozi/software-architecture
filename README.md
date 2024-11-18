@@ -37,3 +37,7 @@
 | 08 | [컴포넌트 기반 사고](https://github.com/danmooozi/software-architecture/blob/main/ch08_컴포넌트_기반_사고/ch08_lia.md) | 24.10.21 | 오시연 |
 | 09 | [아키텍처 스타일 기초](https://github.com/danmooozi/software-architecture/blob/main/ch09_아키텍처_스타일_기초/ch09_mono.md) | 24.10.28 | 김원호 |
 | 10 | [레이어드 아키텍처 스타일](https://github.com/danmooozi/software-architecture/blob/main/ch10_레이어드_아키텍처_스타일/ch10_wynter.md) | 24.10.28 | 김수빈 |
+| 11 | [파이프라인 아키텍처 스타일](https://github.com/danmooozi/software-architecture/blob/main/ch11_파이프라인_아키텍처_스타일/ch11_max.md) | 24.11.05 | 이찬형 |
+| 12 | [마이크로커널 아키텍처 스타일](https://github.com/danmooozi/software-architecture/blob/main/ch12_마이크로커널_아키텍처_스타일/ch12_eden.md) | 24.11.05 | 김영호 |
+| 13 | [서비스 기반 아키텍처 스타일](https://github.com/danmooozi/software-architecture/blob/main/ch13_서비스_기반_아키텍처_스타일/ch13_lia.md) | 24.11.12 | 오시연 |
+| 14 | [이벤트 기반 아키텍처 스타일](https://github.com/danmooozi/software-architecture/blob/main/ch14_이벤트_기반_아키텍처_스타일/ch14_mono.md) | 24.11.12 | 김원호 |
