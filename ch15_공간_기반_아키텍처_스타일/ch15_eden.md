@@ -5,7 +5,7 @@
 병목을 줄이기 위해 웹 서버를 확장할 수 있지만, 애플리케이션 서버와 데이터베이스 서버 쪽으로 병목 지점이 밀릴 뿐 근본적인 해결은 되지 않습니다.  
 결국 데이터베이스 서버까지 확장을 하게 되겠지만, 웹 기반 구조는 웹 서버 확장은 쉽고, 데이터베이스는 확장이 어려운 삼각형 토폴로지 형태를 가지기 때문에 한계가 있습니다.
 
-<img src="./images/15-1.png" width="500" />
+<img src="https://github.com/JadenKim-dev/software-architecture-101/blob/main/images/15-1.png?raw=true" width="500" />
 
 동시적인 유저 부하가 많은 대용량 애플리케이션에서는, **데이터베이스의 동시 트랜잭션 처리 능력이 최종 제약 조건**이 되는 경우가 많습니다.  
 캐시 기술과 데이터베이스 확장 솔루션을 통해 문제를 완화할 수 있지만, **높은 부하 상황에서 애플리케이션을 확장하는 작업은 여전히 쉽지 않습니다**.
@@ -36,7 +36,7 @@
 작은 웹 애플리케이션은 단일 처리 장치에 배포될 수 있지만, 대규모 애플리케이션은 기능에 따라 여러 처리 장치에 나누어 배치될 수 있습니다.  
 마이크로서비스처럼 단일 목적의 작은 서비스도 처리 장치에 포함될 수 있으며, 어플리케이션 로직 외에도 인메모리 데이터 그리드 및 복제 엔진도 함께 포함될 수 있습니다.
 
-<img src="./images/15-3.png" width="500" />
+<img src="https://github.com/JadenKim-dev/software-architecture-101/blob/main/images/15-3.png?raw=true" width="500" />
 
 ### 15.1.2 가상 미들웨어
 
@@ -48,7 +48,7 @@
 메시징 그리드는 **입력 요청과 세션 상태를 관리**하며, 가상 미들웨어에 들어온 **요청을 적절한 활성 처리 장치로 전달**합니다.  
 라운드 로빈 같은 단순한 알고리즘부터 요청 처리 상태를 추적하는 복잡한 알고리즘까지 다양한 방식으로 구현할 수 있으며, 보통 HA 프록시나 Nginx 같은 부하 분산이 가능한 웹 서버로 구현됩니다.
 
-<img src="./images/15-4.png" width="500" />
+<img src="https://github.com/JadenKim-dev/software-architecture-101/blob/main/images/15-4.png?raw=true" width="500" />
 
 #### 데이터 그리드
 
@@ -58,7 +58,7 @@
 메시징 그리드는 모든 처리 장치에 요청을 전달할 수 있으므로, **각 처리 장치는 동일한 데이터를 인메모리 데이터 그리드에 유지**해야 합니다.  
 데이터 동기화는 비동기 방식으로 100밀리초 미만의 속도로 신속하게 이루어집니다.
 
-<img src="./images/15-5.png" width="500" />
+<img src="https://github.com/JadenKim-dev/software-architecture-101/blob/main/images/15-5.png?raw=true" width="500" />
 
 데이터는 동일한 이름의 데이터 그리드를 포함한 처리 장치 간에 동기화됩니다.  
 아래는 헤이즐캐스트를 사용해 고객 프로필 정보를 저장하는 처리 장치에 대해 내부 복제 데이터 그리드를 생성하는 자바 코드 예시입니다.
@@ -108,7 +108,7 @@ Members {size:3, ver:3} [
 처리 그리드는 여러 처리 장치가 단일 비즈니스 요청을 처리할 때, 이를 오케스트레이트하는 역할을 합니다.  
 또한, 서로 다른 종류의 처리 장치 간 조정이 필요한 요청이 있을 때, 이를 중재/조정하는 역할을 합니다.
 
-<img src="./images/15-6.png" width="500" />
+<img src="https://github.com/JadenKim-dev/software-architecture-101/blob/main/images/15-6.png?raw=true" width="500" />
 
 #### 배포 관리자
 
@@ -124,7 +124,7 @@ Members {size:3, ver:3} [
 메시징은 전달 보장을 지원하고, FIFO 큐로 메시지 순서를 유지합니다.  
 메시징을 이용하면 처리 장치와 데이터 라이터를 분리할 수 있어서, 데이터 라이터가 장애로 중단 되어도 처리 장치는 계속 무중단 처리가 가능합니다.
 
-<img src="./images/15-7.png" width="500" />
+<img src="https://github.com/JadenKim-dev/software-architecture-101/blob/main/images/15-7.png?raw=true" width="500" />
 
 데이터 펌프는 일반적으로 도메인 또는 서브도메인별로 여러 개 사용됩니다.  
 캐시 종류별로(CustomerProfile, CustomerWishlist) 전용 데이터 펌프를 두거나, 더일반적인 캐시를 포함한 큰 도메인별로(Customer) 배정할 수도 있습니다.
@@ -140,13 +140,13 @@ Members {size:3, ver:3} [
 하나의 데이터 라이터가 여러 데이터 펌프를 리스닝하의, 해당 도메인의 모든 데이터 업데이트를 담당합니다.  
 데이터 펌프는 어플리케이션으로 구현될 수도 있고, 데이터 허브로 구현될 수도 있습니다.
 
-<img src="./images/15-8.png" width="500" />
+<img src="https://github.com/JadenKim-dev/software-architecture-101/blob/main/images/15-8.png?raw=true" width="500" />
 
 처리 장치 클래스마다 전용 데이터 라이터를 두는 것도 가능합니다.  
 이 경우, 각 데이터 라이터가 자신의 데이터 펌프와 데이터베이스 로직을 관리합니다.  
 이렇게 하면 데이터 라이터 수가 많아지긴 하지만, 데이터 펌프와 데이터 라이터가 처리 장치마다 할당되어 확장성과 민첩성을 향상시킬 수 있습니다.
 
-<img src="./images/15-9.png" width="500" />
+<img src="https://github.com/JadenKim-dev/software-architecture-101/blob/main/images/15-9.png?raw=true" width="500" />
 
 ### 15.1.5 데이터 리더
 
@@ -162,7 +162,7 @@ Members {size:3, ver:3} [
 **임시 캐시 소유자는 데이터를 요청하는 큐에 메시지**를 보내면, **데이터 리더는 데이터베이스에서 필요한 데이터를 검색해 리버스 데이터 펌프를 통해 전달**합니다.  
 임시 캐시 소유자는 데이터를 캐시에 로드한 후 락을 해제하고, 모든 인스턴스가 동기화되면 처리를 시작합니다.
 
-<img src="./images/15-10.png" width="500" />
+<img src="https://github.com/JadenKim-dev/software-architecture-101/blob/main/images/15-10.png?raw=true" width="500" />
 
 데이터 라이터와 데이터 리더는 데이터 추상 레이어(data abstraction layer) 또는 데이터 액세스 레이어(data access layer)를 형성합니다.  
 **데이터 액세스 레이어**는 처리 장치가 데이터 하부 구조에 밀접하게 연계된 구조로, 데이터 리더/라이터를 통해 데이터베이스에 접근하여 **내부 로직은 데이터에 커플링** 되어 있습니다.  
