@@ -41,5 +41,5 @@
 | 12 | [마이크로커널 아키텍처 스타일](https://github.com/danmooozi/software-architecture/blob/main/ch12_마이크로커널_아키텍처_스타일/ch12_eden.md) | 24.11.05 | 김영호 |
 | 13 | [서비스 기반 아키텍처 스타일](https://github.com/danmooozi/software-architecture/blob/main/ch13_서비스_기반_아키텍처_스타일/ch13_lia.md) | 24.11.12 | 오시연 |
 | 14 | [이벤트 기반 아키텍처 스타일](https://github.com/danmooozi/software-architecture/blob/main/ch14_이벤트_기반_아키텍처_스타일/ch14_mono.md) | 24.11.12 | 김원호 |
-| 15 | [공간 기반 아키텍처 스타일](https://github.com/danmooozi/software-architecture/blob/main/ch15_공간_기반_아키텍처_스타일/ch15_wynter.md) | 24.11.18 | 김수빈 |
+| 15 | [공간 기반 아키텍처 스타일](https://github.com/danmooozi/software-architecture/blob/main/ch15_공간_기반_아키텍처_스타일/ch15_wynter.md) | 24.11.18 | 김수빈 |
 | 16 | [오케스트레이션 기반 서비스 지향 아키텍처 스타일](https://github.com/danmooozi/software-architecture/blob/main/ch16_오케스트레이션_기반_서비스_지향_아키텍처_스타일/ch16_max.md) | 24.11.18 | 이찬형 |
