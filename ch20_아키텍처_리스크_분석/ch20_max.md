@@ -37,7 +37,7 @@
 - **리스크 필터링** *(그림 20-3)*
     - **목적**: 중요한 리스크만 강조하여 신호대잡음비(SNR) 개선
         
-              ![Screenshot 2024-12-11 at 13 20 04](https://github.com/user-attachments/assets/c4b480f3-acbe-4937-a1da-b6428da6852b)
+      ![Screenshot 2024-12-11 at 13 20 04](https://github.com/user-attachments/assets/c4b480f3-acbe-4937-a1da-b6428da6852b)
 
 - **리스크 방향성** *(그림 20-4)*
     
